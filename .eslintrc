@@ -1,0 +1,54 @@
+{
+    "extends": [
+        "plugin:@typescript-eslint/parser",
+        "plugin:@typescript-eslint/eslint-plugin",
+        "plugin:prettier/recommended"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "env": {
+        "es6": true,
+        "amd": true,
+        "browser": true,
+        "node": true
+    },
+    "parserOptions": {
+        "ecmaVersion": 9,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "modules": true
+        }
+    },
+    "plugins": [
+        "react",
+        "@typescript-eslint"
+    ],
+    "settings": {
+        "react": {
+            "pragma": "React",
+            "version": "16.13.1"
+        },
+        "import/parser": {
+            "typescript-eslint-parser": ["ts", "tsx"]
+        },
+        "import/resolver": {
+            "eslint-import-resolver-typescript": true,
+            "babel-module": {},
+            "node": {
+                "extensions": [".ts", ".tsx"]
+            }
+        }
+    },
+    "rules": {
+        "react/display-name": 0,
+        "react/prop-types": 0,
+        "no-console": "off",
+        "no-unused-vars": 0,
+        "indent": "off",
+        "no-undef": "warn",
+        "no-mixed-spaces-and-tabs": "error",
+        "quotes": ["error", "single"],
+        "comma-spacing": ["error", { "before": false, "after": true }],
+        "key-spacing": ["error", { "beforeColon": false }],
+        "space-infix-ops": "error"
+    }
+}
