@@ -1,0 +1,11 @@
+const path = require('path');
+
+module.exports = {
+  webpack: (config, {buildId, dev, isServer, defaultLoaders, webpack}) => {
+    console.log(config)
+    return config
+  },
+  sassOptions: {
+    includePaths: [path.join(__dirname, 'styles')]
+  }
+}

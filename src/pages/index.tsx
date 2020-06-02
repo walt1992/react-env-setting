@@ -3,7 +3,7 @@ import Todo from 'components/Todo';
 const Home = () => {
   return (
     <div>
-      This is Home
+      This is Index
       <Todo />
     </div>
   )
