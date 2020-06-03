@@ -7,5 +7,12 @@ module.exports = {
   },
   sassOptions: {
     includePaths: [path.join(__dirname, 'styles')]
+  },
+  experimental: {
+    async redirects() {
+      return [
+        { source: '/', destination: '/home', permanent: true}
+      ]
+    }
   }
 }
